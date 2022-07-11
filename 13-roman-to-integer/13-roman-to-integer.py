@@ -9,7 +9,7 @@ class Solution:
         if len(s) == 1:
             return roman_dict[s]
         
-        for numeral in range(len(s)-1): 
+        for numeral in range(len(s) - 1): 
             
             if s[numeral] != "O" and roman_dict[s[numeral]] < roman_dict[s[numeral + 1]]:
                 
@@ -17,13 +17,12 @@ class Solution:
                 
                 if combination in valid_combinations:
                     number += roman_dict[s[numeral + 1]] - roman_dict[s[numeral]]
-                    numeral += 1
                     
                     s = s.replace(combination, "OO", 1)
             
             else:
                 
-                if numeral == len(s) - 2 :
+                if numeral == len(s) - 2:
                     number += roman_dict[s[numeral]] + roman_dict[s[numeral + 1]]
                     
                 else:
