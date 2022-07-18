@@ -4,12 +4,6 @@ class Solution:
         array_index = 0
         prefix_index = 0
         
-        if strs == [""]:
-            return ''
-        
-        if len(strs) == 1:
-            return strs[0]
-        
         while True:
             for string in strs:
                 
