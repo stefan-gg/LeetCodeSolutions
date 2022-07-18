@@ -20,4 +20,5 @@ class Solution:
             
         if not bracket_arr:
             return True
+        
         return False
