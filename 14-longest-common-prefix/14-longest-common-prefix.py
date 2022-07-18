@@ -24,6 +24,5 @@ class Solution:
                         return lcp
                     
                     lcp += strs[0][prefix_index]
-                    print(lcp)
                     array_index = 0
                     prefix_index += 1
