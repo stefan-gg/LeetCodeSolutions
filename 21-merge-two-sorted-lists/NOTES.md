@@ -1,0 +1,1 @@
+probaj rekurzivno ako ne ide gledaj opet po resenja i https://www.geeksforgeeks.org/data-structures/linked-list/#singlyLinkedList
