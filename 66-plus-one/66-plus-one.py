@@ -2,10 +2,11 @@ class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         
         index = -1
+        
         if digits.count(9) == len(digits):
             
+            digits = [0] * (len(digits) + 1)
             digits[0] = 1
-            digits[1:] = [0] * len(digits)
             
             return digits
         
